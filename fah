@@ -1,15 +1,35 @@
-local Functions = {}
+local tableofdumbfunctions = {}
 
-Functions.Ballsack(ballssss) = function(lel)
-    print("goon")
+tableofdumbfunctions.daFunction = function()
+    for _, values in pairs(tableofdumbfunctions) do
+        print(values)
+    end
+end 
+
+tableofdumbfunctions.diddyIsGonnaDiddleUAt3am = "abcdefghigklmnopqrstuvwsyz"
+tableofdumbfunctions.yoMama = function(reeeeee)
+    print(reeeeee)
 end
 
-getgenv().bals = true
+tableofdumbfunctions.daFunction(tableofdumbfunctions)
 
-if getgenv().bals then
-    print("uuuhfeuhfeuh")
-    Functions.Ballsack(ballssss)
-else
-    print("iwuehfiwufheiwuefhiwuefh")
+local tableofdumbnumbers = {}
+
+tableofdumbnumbers.SixSeven = 67
+tableofdumbnumbers.FiveFive = 55
+tableofdumbnumbers.SixOne = function()
+    local loopID = 1
+    while loopID <= 5 do
+        print("brah")
+        os.execute("sleep 1")
+        loopID = loopID + 1
+    end
 end
 
+os.execute("sleep 2")
+
+for _, numbers in pairs(tableofdumbnumbers) do
+    print(numbers)
+end
+
+tableofdumbnumbers.SixOne()
