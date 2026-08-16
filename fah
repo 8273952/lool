@@ -1,0 +1,15 @@
+local Functions = {}
+
+Functions.Ballsack(ballssss) = function(lel)
+    print("goon")
+end
+
+getgenv().bals = true
+
+if getgenv().bals then
+    print("uuuhfeuhfeuh")
+    Functions.Ballsack(ballssss)
+else
+    print("iwuehfiwufheiwuefhiwuefh")
+end
+
