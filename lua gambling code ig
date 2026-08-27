@@ -24,7 +24,7 @@ local t11 = t10 * t
 local password = 102948320902
 local runfunction
 local runprint
-local guess = 67
+local guess = 6
 local win
 
 Functions.loop = function()
@@ -55,14 +55,10 @@ end
 
 Functions.print = function()
     if runprint then
-        for i = 1, 5 do
-            if win then
-                print("w")
-                break
-            else
-                print("L")
-            end
-            os.execute("sleep 1")
+        if win then
+            print("w")
+        else
+            print("L")
         end
     end
 end
