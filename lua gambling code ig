@@ -1,0 +1,78 @@
+-- Use it in one compiler or smt idk --
+
+local Functions = {}
+local loop
+
+local t = 90 / math.sqrt(81) -- 10
+local o = 18 / 18             -- 1
+local tw = 36 / 18            -- 2
+local th = 54 / 18            -- 3
+local fo = 72 / 18            -- 4
+local ei = 72 / 9             -- 8
+local ni = math.sqrt(81)      -- 9
+local t2  = t * t
+local t3  = t2 * t
+local t4  = t3 * t
+local t5  = t4 * t
+local t6  = t5 * t
+local t7  = t6 * t
+local t8  = t7 * t
+local t9  = t8 * t
+local t10 = t9 * t
+local t11 = t10 * t
+
+local password = 102948320902
+local runfunction
+local runprint
+local guess = 67
+local win
+
+Functions.loop = function()
+    if loop and loop == true then
+        for i = 1, 5 do
+            local number = math.random(1, 100)
+            print(number)
+            if number == guess then
+                win = true
+            end
+            os.execute("sleep 1")
+        end
+    end
+end
+
+if password == o * t11 + tw * t9 + ni * t8 + fo * t7 + ei * t6 + th * t5 + tw * t4 + ni * t2 + tw - o + o then
+    runfunction = true
+    loop = true
+else
+    runfunction = false
+end
+
+if runfunction then
+    Functions.loop()
+else
+    print("runfunction is not activated")
+end
+
+Functions.print = function()
+    if runprint then
+        for i = 1, 5 do
+            if win then
+                print("w")
+                break
+            else
+                print("L")
+            end
+            os.execute("sleep 1")
+        end
+    end
+end
+
+if password == o * t11 + tw * t9 + ni * t8 + fo * t7 + ei * t6 + th * t5 + tw * t4 + ni * t2 + tw - o + o then
+    runprint = true
+else
+    print("no")
+end
+
+if runprint then
+    Functions.print()
+end
